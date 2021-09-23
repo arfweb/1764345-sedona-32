@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Рамиль Абдуллин](https://up.htmlacademy.ru/htmlcss/32/user/1764345).
-* Наставник: `Неизвестно`.
+* Студент: [Рамиль РАбдуллин](https://up.htmlacademy.ru/htmlcss/32/user/1764345).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
