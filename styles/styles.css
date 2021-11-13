@@ -1,0 +1,35 @@
+
+/* Первая картинка */
+/* Поставил пробные цвета задних фонов чисто для того, чтобы визуально различались разные сектора на странице.
+Понимаю, что это не те тэги, в которых должна стоять картинка - на данный момент главный вопрос,
+что картинки не отображается ВООБЩЕ. (во всех случаях)*/
+.first-page {
+  color: #333333;
+  background: #BBBBBB;
+  background-image: url("image/ferst-screen/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  color: #333333;
+  background: #DDDDDD;
+}
+
+/* Вторая картинка */
+.newsletter {
+  color: #333333;
+  background: #BBBBBB;
+  background-image: url("image/footer/mailing-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* Третья картинка */
+.filter-background {
+  color: #333333;
+  background: #BBBBBB;
+  background-image: url("image/footer/mailing-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
