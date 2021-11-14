@@ -1,35 +1,47 @@
 
-/* Первая картинка */
-/* Поставил пробные цвета задних фонов чисто для того, чтобы визуально различались разные сектора на странице.
-Понимаю, что это не те тэги, в которых должна стоять картинка - на данный момент главный вопрос,
-что картинки не отображается ВООБЩЕ. (во всех случаях)*/
 .first-page {
   color: #333333;
   background: #BBBBBB;
-  background-image: url("image/ferst-screen/index-bg.jpg");
+  background-image: url("../image/first-screen/index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.logo {
+/* Перевожу картини из контентных в фоновые */
+/* <img class="advantages-image" src="image/advantages/photo-1.jpg" width="800" height="384" alt="Небольшие дома">
+<img class="advantages-image" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё">
+<img class="advantages-image" src="image/advantages/food.svg" width="74" height="70" alt="Еда">
+<img class="advantages-image" src="image/advantages/souvenir.svg" width="64" height="76" alt="Сувениры">
+<img class="advantages-image" src="image/advantages/photo-2.jpg" width="800" height="384" alt="Завораживающий ландшафт"> */
+
+.advantages-picter-1 {
   color: #333333;
-  background: #DDDDDD;
+  background: #BBBBBB;
+  background-image: url("../image/advantages/photo-1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
-/* Вторая картинка */
+.advantages-picter-2 {
+  color: #333333;
+  background: #FFFFFF;
+  background-image: url("../image/advantages/photo-2.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .newsletter {
   color: #333333;
   background: #BBBBBB;
-  background-image: url("image/footer/mailing-bg.jpg");
+  background-image: url("../image/footer/mailing-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-/* Третья картинка */
 .filter-background {
   color: #333333;
   background: #BBBBBB;
-  background-image: url("image/footer/mailing-bg.jpg");
+  background-image: url("../image/footer/mailing-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
