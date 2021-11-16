@@ -1,13 +1,88 @@
-
-.first-page {
-  color: #333333;
-  background: #BBBBBB;
-  background-image: url("../image/first-screen/index-bg.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
-/* Перевожу картини из контентных в фоновые */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {                     /* Первая страница index.html */
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.button {    /* Определяет набор свойств для похожих кнопок и ссылок */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-two {    /* Определяет набор свойств для второй группы похожих кнопок */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brown-button {    /* Переопределяет только фоновый цвет для кнопки */
+  background-color: #756257;
+}
+
+.page-header {
+  color: #000000;    /* Цвет для текста шапки */
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link-current {
+  /*                       Активная страница */
+}
+
+.first-page-background {
+  /* Здесь будет фоновая картинка логотипа Седона (первый экран) */
+}
+
+.first-page-description {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  line-height: 36px;
+}
+
+/* Перевожу картинки из контентных в фоновые */
 /* <img class="advantages-image" src="image/advantages/photo-1.jpg" width="800" height="384" alt="Небольшие дома">
 <img class="advantages-image" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё">
 <img class="advantages-image" src="image/advantages/food.svg" width="74" height="70" alt="Еда">
@@ -16,32 +91,177 @@
 
 .advantages-picter-1 {
   color: #333333;
-  background: #BBBBBB;
-  background-image: url("../image/advantages/photo-1.jpg");
+  background: #83B3D3;
+  background-image: url("../image/advantages/photo-1.jpg");    /* "Небольшие дома" */
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .advantages-picter-2 {
   color: #333333;
-  background: #FFFFFF;
-  background-image: url("../image/advantages/photo-2.jpg");
+  background: #83B3D3;
+  background-image: url("../image/advantages/photo-2.jpg");    /* "Завораживающий ландшафт" */
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.advantages-list {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-number {
+  text-transform: uppercase;
+}
+
+.searches-question {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.searches-answer {
+  line-height: 26px;
+}
+
+.searches-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .newsletter {
-  color: #333333;
-  background: #BBBBBB;
+  color: #FFFFFF;
+  background: #448899;
   background-image: url("../image/footer/mailing-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+.newsletter-offer {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+                                  /* Подвал страницы */
+.footer-contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-inner {                     /* Страница каталога catalog.html */
+  background-color: #F2F2F2;
+}
+
 .filter-background {
-  color: #333333;
-  background: #BBBBBB;
-  background-image: url("../image/footer/mailing-bg.jpg");
+  color: #FFFFFF;
+  text-align: left;
+  background: #705858;
+  background-image: url("../image/catalog-page/catalog-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.control-label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.label-mark {
+  text-align: right;
+}
+
+.filter-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sorting-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.visually-hotels {
+  text-align: left;
+}
+
+.hotel-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background: #83B3D3;
+  text-transform: uppercase;
+}
+
+.pagination-current {
+  color: #000000;
+  background: inherit;
+}
+
+.catalog-filter-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-input {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
 }
