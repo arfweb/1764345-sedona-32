@@ -1,3 +1,6 @@
+/* Главная страница */
+/* <!-- Объявления --> */
+  
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -14,14 +17,27 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+                     /* "Подсвечиваем" присутствующий блок */
+  outline: 5px solid #ff0000;
+  outline-offset: -5px;
+}
+
 body {                     /* Первая страница index.html */
+  /* margin: 0;
+  display: flex;
+  flex-direction: column; - лекция 4, Флексы. */
+  /* Объявляем характеристики шрифтов, общих для всех страниц */
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
+                      /* "Подсвечиваем" присутствующий блок */
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .button {    /* Определяет набор свойств для похожих кнопок и ссылок */
@@ -29,19 +45,8 @@ body {                     /* Первая страница index.html */
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #83B3D3;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.button-two {    /* Определяет набор свойств для второй группы похожих кнопок */
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -50,26 +55,51 @@ body {                     /* Первая страница index.html */
   background-color: #756257;
 }
 
-.page-header {
-  color: #000000;    /* Цвет для текста шапки */
-}
-
-.navigation-link {
+                                                                       /*     ***     */
+/* Кнопка "Поиск гостиниц ...", имеет отличающийся набор свойств.
+Перенести в другое место в коде. */
+.search-hotel {
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
-  color: #000000;
+  /* line-height: 26px; */  /* Свойство line-height объявлено в body */
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navigation-link-current {
-  /*                       Активная страница */
+
+
+/* <!-- Шапка --> */
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  /* line-height: 26px; */   /* Свойство line-height объявлено в body */
+  color: #000000;          /* Цвет для текста в ссылках шапки */
+  text-decoration: none;     /* Текст ссылки без подчёркивания */
+  text-transform: uppercase; /* ??  Текст ссылки не наклонный  ?? */
 }
 
+                                      /* Активная страница */
+/* .navigation-link-current {} */
+
+/*   Здесь фоновая картинка логотипа Седона (первый экран) */
+
 .first-page-background {
-  /* Здесь будет фоновая картинка логотипа Седона (первый экран) */
+  color: #333333;
+  background: #88ff00;
+  background-image: url("../image/first-screen/bg-divider-group.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
+
+.logo {
+  color: #333333;
+  /* background: #bbbbbb; */
+}
+
 
 .first-page-description {
   font-weight: 700;
@@ -78,7 +108,12 @@ body {                     /* Первая страница index.html */
   text-transform: uppercase;
 }
 
+.advantages {
+text-align: center;
+}
+
 .advantages-description {
+  font-size: 22px;
   line-height: 36px;
 }
 
@@ -91,7 +126,7 @@ body {                     /* Первая страница index.html */
 
 .advantages-picter-1 {
   color: #333333;
-  background: #83B3D3;
+  background: #83b3d3;
   background-image: url("../image/advantages/photo-1.jpg");    /* "Небольшие дома" */
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -99,7 +134,7 @@ body {                     /* Первая страница index.html */
 
 .advantages-picter-2 {
   color: #333333;
-  background: #83B3D3;
+  background: #83b3d3;
   background-image: url("../image/advantages/photo-2.jpg");    /* "Завораживающий ландшафт" */
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -129,21 +164,21 @@ body {                     /* Первая страница index.html */
 }
 
 .searches-answer {
-  line-height: 26px;
+  font-size: 22px;
 }
 
 .searches-link {
   font-weight: 700;
-  font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #756257;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .newsletter {
-  color: #FFFFFF;
+  text-align: center;
+  color: #ffffff;
   background: #448899;
   background-image: url("../image/footer/mailing-bg.jpg");
   background-size: 100% auto;
@@ -157,6 +192,11 @@ body {                     /* Первая страница index.html */
   text-transform: uppercase;
 }
 
+.newsletter-clarified {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
                                   /* Подвал страницы */
 .footer-contacts-phone {
   font-style: normal;
@@ -167,11 +207,12 @@ body {                     /* Первая страница index.html */
 }
 
 .main-inner {                     /* Страница каталога catalog.html */
-  background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .filter-background {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   background: #705858;
   background-image: url("../image/catalog-page/catalog-bg.jpg");
@@ -185,9 +226,12 @@ body {                     /* Первая страница index.html */
   line-height: 78px;
 }
 
-.breadcrumbs-item {
+.filter-link {
   font-size: 16px;
   line-height: 21px;
+  color: #ffffff;
+  background: inherit;
+  text-decoration: none;
 }
 
 .catalog-filter-title {
@@ -196,20 +240,28 @@ body {                     /* Первая страница index.html */
   line-height: 26px;
 }
 
-.control-label {
-  font-weight: 400;
+/* Временное свойство для надписей ОТ и ДО. 
+Убрать когда появятся внутри прямоугольников. */
+/* .label-mark {
+  text-align: right;
+} */
+
+.catalog-filter-input {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: right;
+}
+
+
+
+.catalog-filter-label {
   font-size: 18px;
   line-height: 23px;
 }
 
-.label-mark {
-  text-align: right;
-}
 
-.filter-link {
-  color: inherit;
-  text-decoration: none;
-}
+
 
 .sorting-title {
   font-weight: 700;
@@ -245,8 +297,8 @@ body {                     /* Первая страница index.html */
 .pagination-link {
   font-size: 20px;
   line-height: 26px;
-  color: #FFFFFF;
-  background: #83B3D3;
+  color: #ffffff;
+  background: #83b3d3;
   text-transform: uppercase;
 }
 
@@ -255,13 +307,6 @@ body {                     /* Первая страница index.html */
   background: inherit;
 }
 
-.catalog-filter-label {
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.catalog-filter-input {
-  font-size: 18px;
-  line-height: 23px;
-  color: #333333;
+.inner-newsletter {
+  text-align: center;
 }
