@@ -19,7 +19,7 @@
 
 html {
   height: 100%;
-                     /* "Подсвечиваем" присутствующий блок */
+                     /* "Подсвечивает" присутствующий (этот) блок */
   outline: 5px solid #ff0000;
   outline-offset: -5px;
 }
@@ -28,14 +28,14 @@ body {                     /* Первая страница index.html */
   /* margin: 0;
   display: flex;
   flex-direction: column; - лекция 4, Флексы. */
-  /* Объявляем характеристики шрифтов, общих для всех страниц */
+  /* Объявляет характеристики шрифтов, общих для всех страниц */
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #f2f2f2;
-                      /* "Подсвечиваем" присутствующий блок */
+                      /* "Подсвечивает" присутствующий (этот) блок */
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -52,23 +52,9 @@ body {                     /* Первая страница index.html */
 }
 
 .brown-button {    /* Переопределяет только фоновый цвет для кнопки */
-  background-color: #756257;
-}
-
-                                                                       /*     ***     */
-/* Кнопка "Поиск гостиниц ...", имеет отличающийся набор свойств.
-Перенести в другое место в коде. */
-.search-hotel {
-  font-weight: 700;
-  font-size: 20px;
-  /* line-height: 26px; */  /* Свойство line-height объявлено в body */
-  text-align: center;
   color: #ffffff;
   background-color: #756257;
-  text-decoration: none;
-  text-transform: uppercase;
 }
-
 
 
 /* <!-- Шапка --> */
@@ -77,57 +63,86 @@ body {                     /* Первая страница index.html */
   font-weight: 700;
   font-size: 20px;
   /* line-height: 26px; */   /* Свойство line-height объявлено в body */
-  color: #000000;          /* Цвет для текста в ссылках шапки */
+  color: #000000;          /* Цвет для текста в ссылках */
   text-decoration: none;     /* Текст ссылки без подчёркивания */
-  text-transform: uppercase; /* ??  Текст ссылки не наклонный  ?? */
 }
 
                                       /* Активная страница */
 /* .navigation-link-current {} */
 
-/*   Здесь фоновая картинка логотипа Седона (первый экран) */
-
+/* <!-- Лого --> */
+                       /* Фоновая картинка (первый экран) */
 .first-page-background {
+  line-height: 36px;
   color: #333333;
-  background: #88ff00;
+  text-align: center;
+  background-color: #88ff00;
   background-image: url("../image/first-screen/bg-divider-group.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .logo {
+  /* text-align: center; - не работает */
   color: #333333;
-  /* background: #bbbbbb; */
+  background: #bbbbbb;
 }
 
 
-.first-page-description {
+.first-page-title {
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
 }
 
-.advantages {
+.first-page-description {
+  font-weight: 400;
+}
+
+/* <!-- Преимущества --> */
+
+.advantages-list {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-item {
 text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.item-bg-1 .advantages-title {
+  color: #ffffff;
+}
+
+/* Свойства для этих классов определены выше - можно удалить */
+/* .advantages-number {
+  text-transform: uppercase;
 }
 
 .advantages-description {
   font-size: 22px;
   line-height: 36px;
-}
+} */
 
-/* Перевожу картинки из контентных в фоновые */
+/* Перевожу картинки из контентных в фоновые. - Не стал переводить! */
 /* <img class="advantages-image" src="image/advantages/photo-1.jpg" width="800" height="384" alt="Небольшие дома">
 <img class="advantages-image" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё">
 <img class="advantages-image" src="image/advantages/food.svg" width="74" height="70" alt="Еда">
 <img class="advantages-image" src="image/advantages/souvenir.svg" width="64" height="76" alt="Сувениры">
 <img class="advantages-image" src="image/advantages/photo-2.jpg" width="800" height="384" alt="Завораживающий ландшафт"> */
-
+/*
 .advantages-picter-1 {
-  color: #333333;
-  background: #83b3d3;
-  background-image: url("../image/advantages/photo-1.jpg");    /* "Небольшие дома" */
+  color: #ffffff;
+  background: #d3b3d3;
+  background-image: url("../image/advantages/photo-1.jpg");    - "Небольшие дома"
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -135,25 +150,30 @@ text-align: center;
 .advantages-picter-2 {
   color: #333333;
   background: #83b3d3;
-  background-image: url("../image/advantages/photo-2.jpg");    /* "Завораживающий ландшафт" */
+  background-image: url("../image/advantages/photo-2.jpg");     - "Завораживающий ландшафт" 
   background-size: 100% auto;
   background-repeat: no-repeat;
+} */
+
+.item-bg-1 {
+  color: #ffffff;
+  background-color: #83b3d3;
 }
 
-.advantages-list {
-  font-size: 18px;
-  line-height: 21px;
+.item-bg-2 {
+  color: inherit;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+.item-bg-3 {
+  color: inherit;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-number {
-  text-transform: uppercase;
+/* <!-- Форма записи --> */
+
+.searches {
+text-align: center;
 }
 
 .searches-question {
@@ -163,18 +183,19 @@ text-align: center;
   text-transform: uppercase;
 }
 
-.searches-answer {
-  font-size: 22px;
-}
-
-.searches-link {
+/* Ссылка "Поиск гостиниц ...", имеет отличающийся набор свойств. */
+.search-hotel-button {
   font-weight: 700;
+  font-size: 20px;
   line-height: 36px;
+  text-align: center;
   color: #ffffff;
-  background: #756257;
+  background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* <!-- Наши новости --> */
 
 .newsletter {
   text-align: center;
@@ -192,12 +213,8 @@ text-align: center;
   text-transform: uppercase;
 }
 
-.newsletter-clarified {
-  font-size: 22px;
-  text-transform: uppercase;
-}
+/* <!-- Наши контакты --> */
 
-                                  /* Подвал страницы */
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
@@ -206,7 +223,10 @@ text-align: center;
   text-decoration: none;
 }
 
-.main-inner {                     /* Страница каталога catalog.html */
+
+                                     /* Страница каталога catalog.html */
+
+.main-inner {
   font-size: 18px;
   line-height: 23px;
 }
