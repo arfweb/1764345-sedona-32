@@ -122,17 +122,10 @@ text-align: center;
   color: #ffffff;
 }
 
-/* Свойства для этих классов определены выше - можно удалить */
-/* .advantages-number {
-  text-transform: uppercase;
-}
 
-.advantages-description {
-  font-size: 22px;
-  line-height: 36px;
-} */
-
-/* Перевожу картинки из контентных в фоновые. - Не стал переводить! */
+/* Перевожу картинки из контентных в фоновые.
+  06.12.21 Вернул обратно в контентные! Переведу позже. */
+  
 /* <img class="advantages-image" src="image/advantages/photo-1.jpg" width="800" height="384" alt="Небольшие дома">
 <img class="advantages-image" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё">
 <img class="advantages-image" src="image/advantages/food.svg" width="74" height="70" alt="Еда">
@@ -212,6 +205,18 @@ text-align: center;
   line-height: 36px;
   text-transform: uppercase;
 }
+  
+.field {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.address-button {
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
 
 /* <!-- Наши контакты --> */
 
@@ -231,6 +236,8 @@ text-align: center;
   line-height: 23px;
 }
 
+/* <!-- "Секция фильтрация" --> */
+
 .filter-background {
   color: #ffffff;
   text-align: left;
@@ -246,13 +253,16 @@ text-align: center;
   line-height: 78px;
 }
 
-.filter-link {
+/* <!-- "Хлебные крошки" --> */
+
+.breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  background: inherit;
   text-decoration: none;
 }
+
+/* <!-- Фильтрация --> */
 
 .catalog-filter-title {
   font-weight: 700;
@@ -260,34 +270,30 @@ text-align: center;
   line-height: 26px;
 }
 
-/* Временное свойство для надписей ОТ и ДО. 
-Убрать когда появятся внутри прямоугольников. */
-/* .label-mark {
-  text-align: right;
-} */
-
-.catalog-filter-input {
+.control-label {
   font-size: 18px;
   line-height: 23px;
+}
+ 
+.price-filter-input {
+  font-size: 18px;
+  line-height: 23px;
+  /* color: #ffffff; */ /* - Надписи внутри поля <input> белые. Изменить, когда фон поменяется на картинку. */
+  /* text-align: right */; /* - Надписи "ОТ" и "ДО" прижаты вправо. */
+  /* Так же,при отображении цен внутри поля <input> надписи "ОТ" и "ДО" пропадают. */
+}
+
+.filter-link {
   color: #ffffff;
-  text-align: right;
+  text-decoration: none;
 }
 
-
-
-.catalog-filter-label {
-  font-size: 18px;
-  line-height: 23px;
-}
-
-
-
+/* <!-- Сортировка --> */
 
 .sorting-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
-  text-align: left;
   text-transform: uppercase;
 }
 

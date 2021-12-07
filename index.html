@@ -133,15 +133,17 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-
+      
       <!-- Наши новости -->
       <section class="newsletter">
         <h2 class="visually-hidden">Подписаться на рассылки</h2>
         <p class="newsletter-offer">Подпишитесь на рассылку</p>
         <p class="newsletter-clarified">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="catalog-filter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="button-two" type="submit" name="address" value="Подписаться">Подписаться</button>
+          <!-- Почему-то <label> есть в лекциях и нету в моём коде.  ?? Выяснить (Лекция 2) ?? -->
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+          <button class="search-hotel-button address-button" type="submit" name="address" value="Подписаться">Подписаться</button>
         </form>
       </section>
 

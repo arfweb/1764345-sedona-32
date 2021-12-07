@@ -61,7 +61,7 @@
           <h2 class="inner-header-title">Гостиницы Седоны</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="filter-link" href="index.html">
+              <a class="breadcrumbs-link" href="index.html">
                 <img class="breadcrumbs-image" src="image/catalog-page/filter-homepage.svg" width="12" height="12" alt="Главная">
                 <span class="visually-hidden">Главная</span>
               </a>
@@ -71,7 +71,7 @@
                 <span class="visually-hidden">Стрелка направо</span>
             </li>
             <li class="breadcrumbs-item">
-              <a class="filter-link">Гостиницы</a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -136,13 +136,13 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="control-label">
                 <span class="label-mark visually-hidden">от</span>
-                <input class="catalog-filter-input" type="number" name="min-price" value="0" placeholder="от">
+                <input class="price-filter-input" type="number" name="min-price" value="0" placeholder="от">
               </label>
               <label class="control-label">
                 <span class="label-mark visually-hidden">до</span>
-                <input class="catalog-filter-input" type="number" name="max-price" value="9000" placeholder="до">
+                <input class="price-filter-input" type="number" name="max-price" value="9000" placeholder="до">
                                 <!-- ?? Вопрос ?? -->
-                <!-- Надписи "от" и "до" не отображаются внутри прямоугольников одновременно с ценами. -->
+                <!-- При отображении цен внутри поля <input> надписи "ОТ" и "ДО" пропадают. -->
 
               </label>
               <button class="range-toggle toggle-min" type="button">
@@ -156,11 +156,11 @@
 
             <!-- Кнопка "Сбросить"  -  Должна выполнять "Обновление страницы" -->
             <a class="filter-link" href="catalog.html">Сбросить</a>
-
+            
           </form>
         </section>
-      </div>
-
+      </div>      <!-- Декаративный div, для фона, - закончился. -->
+      
       <!-- Сортировка -->
       <section class="sorting-hotels">
         <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
