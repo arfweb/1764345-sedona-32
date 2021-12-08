@@ -56,6 +56,15 @@ body {                     /* Первая страница index.html */
   background-color: #756257;
 }
 
+/* Ссылки (две), имеющие отличающийся набор свойств. */
+.inner-button {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 
 /* <!-- Шапка --> */
 
@@ -177,15 +186,10 @@ text-align: center;
 }
 
 /* Ссылка "Поиск гостиниц ...", имеет отличающийся набор свойств. */
-.search-hotel-button {
-  font-weight: 700;
-  font-size: 20px;
+.search-hotel {
   line-height: 36px;
-  text-align: center;
   color: #ffffff;
   background-color: #756257;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* <!-- Наши новости --> */
@@ -278,9 +282,10 @@ text-align: center;
 .price-filter-input {
   font-size: 18px;
   line-height: 23px;
-  /* color: #ffffff; */ /* - Надписи внутри поля <input> белые. Изменить, когда фон поменяется на картинку. */
+  color: #ffffff;
+  background-color: rgba(70, 58, 58, 0.0);
   /* text-align: right */; /* - Надписи "ОТ" и "ДО" прижаты вправо. */
-  /* Так же,при отображении цен внутри поля <input> надписи "ОТ" и "ДО" пропадают. */
+  /* Так же, при отображении цен внутри поля <input> надписи "ОТ" и "ДО" пропадают. */
 }
 
 .filter-link {
@@ -297,8 +302,20 @@ text-align: center;
   text-transform: uppercase;
 }
 
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* <!-- Список гостиниц --> */
+
 .visually-hotels {
-  text-align: left;
+  /* text-align: left; - Можно будет удалить, данное свойство не используется. */
+}
+
+.hotel-card {
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .hotel-card-link {
@@ -309,16 +326,25 @@ text-align: center;
   text-decoration: none;
 }
 
-.hotel-card {
-  font-size: 18px;
-  line-height: 23px;
-}
-
 .hotel-card-rating {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
 }
+
+.green-button {    /* Переопределяет только фоновый цвет для кнопки */
+  color: #ffffff;
+  background-color: #7db54f;
+}
+
+/* Ссылка "Загрузить ещё", имеет отличающийся набор свойств. */
+.visually-upload-more {
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+/* <!-- Пагинация --> */
 
 .pagination-link {
   font-size: 20px;
