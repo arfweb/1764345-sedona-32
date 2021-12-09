@@ -267,7 +267,7 @@
             <span class="hotel-card-rating">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <button class="inner-button visually-upload-more" type="button">Загрузить ещё</button>
+        <button class="button-two" type="button">Загрузить ещё</button>
       </section>
 
       <!-- Пагинация -->
@@ -275,24 +275,22 @@
         <h2 class="visually-hidden">Разбивка на страницы</h2>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="button-two pagination-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="button-two" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="button-two" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="button-two" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">...</a>
+            <a class="button-two pagination-next" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">10</span>
-            </a>
+            <a class="button-two" href="#">10</a>
           </li>
         </ul>
         <form class="pagination-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -308,13 +306,16 @@
     <footer class="page-footer">
 
       <!-- Наши новости -->
-      <section class="newsletter">
+      <section class="inner-newsletter">
         <h2 class="visually-hidden">Подписаться на рассылки</h2>
         <p class="newsletter-offer">Подпишитесь на рассылку</p>
         <p class="newsletter-clarified">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="catalog-filter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="inner-button" type="submit" name="address" value="Подписаться">Подписаться</button>
+          <!-- Почему-то <label> есть в лекциях и нету в моём коде.  ?? Выяснить (Лекция 2) ?? -->
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" type="email" name="newsletter-email" id="newsletter-email"
+ placeholder="Ваш e-mail" required>
+          <button class="button-two address-button" type="submit" name="address" value="Подписаться">Подписаться</button>
         </form>
       </section>
 

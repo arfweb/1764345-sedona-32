@@ -40,7 +40,8 @@ body {                     /* Первая страница index.html */
   outline-offset: -5px;
 }
 
-.button {    /* Определяет набор свойств для похожих кнопок и ссылок */
+/* Определяет набор свойств для похожих кнопок и ссылок */
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -51,9 +52,16 @@ body {                     /* Первая страница index.html */
   text-transform: uppercase;
 }
 
-.brown-button {    /* Переопределяет только фоновый цвет для кнопки */
-  color: #ffffff;
-  background-color: #756257;
+/* Определяет набор свойств для второй группы похожих кнопок и ссылок */
+.button-two {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Кнопки и ссылки, имеющие отличающийся набор свойств. */
@@ -78,6 +86,11 @@ body {                     /* Первая страница index.html */
 
                                       /* Активная страница */
 /* .navigation-link-current {} */
+
+.brown-button {    /* Меняет цвет для кнопки */
+  color: #ffffff;
+  background-color: #756257;
+}
 
 /* <!-- Лого --> */
                        /* Фоновая картинка (первый экран) */
@@ -185,8 +198,8 @@ text-align: center;
   text-transform: uppercase;
 }
 
-/* Ссылка "Поиск гостиниц ...", имеет отличающийся набор свойств. */
-.search-hotel {
+/* Ссылка "Поиск гостиницы ...", имеет отличающийся набор свойств. */
+.inner-brown-button {    /* Меняет цвет для кнопки и ширину строки */
   line-height: 36px;
   color: #ffffff;
   background-color: #756257;
@@ -214,6 +227,7 @@ text-align: center;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  background-color: #f2f2f2;
 }
 
 .address-button {
@@ -283,9 +297,9 @@ text-align: center;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-  background-color: rgba(70, 58, 58, 0.0);
-  /* text-align: right */; /* - Надписи "ОТ" и "ДО" прижаты вправо. */
-  /* Так же, при отображении цен внутри поля <input> надписи "ОТ" и "ДО" пропадают. */
+  background-color: inherit;
+  /* text-align: right; */ /* - Надписи "ОТ" и "ДО" должны отображаться справа, (а Цена слева. */
+  /* И не должны пропадать, когда отображаются Цены. */
 }
 
 .filter-link {
@@ -308,10 +322,6 @@ text-align: center;
 }
 
 /* <!-- Список гостиниц --> */
-
-.visually-hotels {
-  /* text-align: left; - Можно будет удалить, данное свойство не используется. */
-}
 
 .hotel-card {
   font-size: 18px;
@@ -346,18 +356,18 @@ text-align: center;
 
 /* <!-- Пагинация --> */
 
-.pagination-link {
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
-  background: #83b3d3;
-  text-transform: uppercase;
-}
-
 .pagination-current {
   color: #000000;
-  background: inherit;
+   background: inherit; /* - #e5e5e5 */
 }
+
+.catalog-filter-input {
+   font-size: 16px;
+   line-height: 21px;
+   background: inherit; /* - #e5e5e5 */
+ }
+
+/* <!-- Подвал --> */
 
 .inner-newsletter {
   text-align: center;
