@@ -58,8 +58,8 @@ body {                     /* Первая страница index.html */
   font-size: 20px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -136,13 +136,14 @@ text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: inherit; /* - Проверить цвет текста (чёрный или серый) */
+  /* color: #000000; */
   text-transform: uppercase;
 }
 
-.item-bg-1 .advantages-title {
+/* .item-bg-1 .advantages-title { - Задаёт белый цвет заголовка на синем фоне
   color: #ffffff;
-}
+} */
 
 
 /* Перевожу картинки из контентных в фоновые.
@@ -172,32 +173,30 @@ text-align: center;
 
 .icon-housing {
   color: #333333;
-  text-align: center;
-  background-color: #88ff00;
+  background-color: rgba(131, 179, 211, 0.0);
   background-image: url("../image/advantages/housing.svg");
   background-size: 75 72;
   background-repeat: no-repeat;
-  /* <img class="advantages-icon" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё"> - Контентная иконка */
+  /* background-align: center; - Нет такого свойства */
+  /* <img class="advantages-icon" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё"> - "Контентная" иконка */
 }
 
 .icon-food {
   color: #333333;
-  text-align: center;
-  background-color: #88ff00;
+  background-color: inherit;
   background-image: url("../image/advantages/food.svg");
   background-size: 74 70;
   background-repeat: no-repeat;
-  /* <img class="advantages-icon" src="image/advantages/food.svg" width="74" height="70" alt="Жильё"> - Контентная иконка */
+  /* <img class="advantages-icon" src="image/advantages/food.svg" width="74" height="70" alt="Жильё"> - "Контентная иконка" */
 }
 
 .icon-souvenir {
   color: #333333;
-  text-align: center;
-  background-color: #88ff00;
+  background-color: rgba(131, 179, 211, 0.0);
   background-image: url("../image/advantages/souvenir.svg");
   background-size: 64 76;
   background-repeat: no-repeat;
-  /* <img class="advantages-icon" src="image/advantages/souvenir.svg" width="64" height="76" alt="Жильё"> - Контентная иконка */
+  /* <img class="advantages-icon" src="image/advantages/souvenir.svg" width="64" height="76" alt="Жильё"> - "Контентная" иконка */
 }
 
 .item-bg-1 {
