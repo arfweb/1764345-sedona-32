@@ -170,6 +170,36 @@ text-align: center;
   background-repeat: no-repeat;
 } */
 
+.icon-housing {
+  color: #333333;
+  text-align: center;
+  background-color: #88ff00;
+  background-image: url("../image/advantages/housing.svg");
+  background-size: 75 72;
+  background-repeat: no-repeat;
+  /* <img class="advantages-icon" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё"> - Контентная иконка */
+}
+
+.icon-food {
+  color: #333333;
+  text-align: center;
+  background-color: #88ff00;
+  background-image: url("../image/advantages/food.svg");
+  background-size: 74 70;
+  background-repeat: no-repeat;
+  /* <img class="advantages-icon" src="image/advantages/food.svg" width="74" height="70" alt="Жильё"> - Контентная иконка */
+}
+
+.icon-souvenir {
+  color: #333333;
+  text-align: center;
+  background-color: #88ff00;
+  background-image: url("../image/advantages/souvenir.svg");
+  background-size: 64 76;
+  background-repeat: no-repeat;
+  /* <img class="advantages-icon" src="image/advantages/souvenir.svg" width="64" height="76" alt="Жильё"> - Контентная иконка */
+}
+
 .item-bg-1 {
   color: #ffffff;
   background-color: #83b3d3;
