@@ -71,7 +71,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ol class="advantages-list">
           <li class="advantages-item item-bg-1">
-            <h3 class="advantages-title">Настоящий городок</h3>
+            <h3 class="advantages-title white-title">Настоящий городок</h3>
             <p class="advantages-number">— №1 —</p>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь.</p>
             <img class="advantages-image" src="image/advantages/photo-1.jpg" width="800" height="384" alt="Небольшие дома">
@@ -99,7 +99,7 @@
 
           <!-- Преимущества, продолжение -->
           <li class="advantages-item item-bg-1">
-            <h3 class="advantages-title ">Там есть мост дьявола</h3>
+            <h3 class="advantages-title white-title">Там есть мост дьявола</h3>
             <p class="advantages-number">— №2 —</p>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="advantages-image" src="image/advantages/photo-2.jpg" width="800" height="384" alt="Завораживающий ландшафт">
@@ -140,8 +140,10 @@
         <p class="newsletter-offer">Подпишитесь на рассылку</p>
         <p class="newsletter-clarified">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <!-- Почему-то <label> есть в лекциях и нету в моём коде.  ?? Выяснить (Лекция 2) ?? - Его нет в макете, поэтому. -->
-          <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+          <!-- Почему-то <label> есть в лекциях и небыло в моём коде.  ?? Выяснить (Лекция 2) ?? - Убрать посоветовала Ольга, поэтому. М. б., ещё нужна обёртка <р>. Не нужна. -->
+          <label class="visually-hidden">Email
+            <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
+          </label>
           <button class="button-two address-button" type="submit" name="address" value="Подписаться">Подписаться</button>
         </form>
       </section>
@@ -185,10 +187,10 @@
         <a class="footer-developer-link" href="https://htmlacademy.ru">
           <img class="developer-logo" src="image/footer/brand.svg" width="115" height="34" alt="Бренд Академии">
         </a>
+
+        <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        
       </section>
     </footer>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
   </body>
 </html>
