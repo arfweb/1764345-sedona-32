@@ -103,12 +103,11 @@ body {                     /* Первая страница index.html */
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-
+/*    Назначение фона для визуального проявления границ блока. */ 
 .logo {
   /* text-align: center; - не работает */
   color: #333333;
-  background: rgba(131, 179, 211, 0.0);
-  /* background: #bbbbbb; */
+  background: rgba(187, 187, 187, 0.5);
 }
 
 
@@ -172,7 +171,8 @@ body {                     /* Первая страница index.html */
   color: #333333;
   background-color: rgba(131, 179, 211, 0.0);
   background-image: url("../image/advantages/housing.svg");
-  background-size: 75 72;
+  width: 75;
+  height: 72px;
   background-repeat: no-repeat;
   /* background-align: center; - Нет такого свойства */
   /* <img class="advantages-icon" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё"> - "Контентная" иконка */
@@ -182,7 +182,8 @@ body {                     /* Первая страница index.html */
   color: #333333;
   background-color: inherit;
   background-image: url("../image/advantages/food.svg");
-  background-size: 74 70;
+  width: 74;
+  height: 70px;
   background-repeat: no-repeat;
   /* <img class="advantages-icon" src="image/advantages/food.svg" width="74" height="70" alt="Жильё"> - "Контентная иконка" */
 }
@@ -191,7 +192,8 @@ body {                     /* Первая страница index.html */
   color: #333333;
   background-color: rgba(131, 179, 211, 0.0);
   background-image: url("../image/advantages/souvenir.svg");
-  background-size: 64 76;
+  width: 64;
+  height: 76px;
   background-repeat: no-repeat;
   /* <img class="advantages-icon" src="image/advantages/souvenir.svg" width="64" height="76" alt="Жильё"> - "Контентная" иконка */
 }
