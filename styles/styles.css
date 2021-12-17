@@ -143,47 +143,53 @@ body {                     /* Первая страница index.html */
 
 
 /* Перевожу картинки из контентных в фоновые.
-  06.12.21 Вернул обратно в контентные! Переведу позже. */
+  06.12.21 Вернул обратно в контентные! Переведу позже. Перевёл в декоративные 17.12.21. */
   
 /* <img class="advantages-image" src="image/advantages/photo-1.jpg" width="800" height="384" alt="Небольшие дома">
 <img class="advantages-image" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё">
 <img class="advantages-image" src="image/advantages/food.svg" width="74" height="70" alt="Еда">
 <img class="advantages-image" src="image/advantages/souvenir.svg" width="64" height="76" alt="Сувениры">
 <img class="advantages-image" src="image/advantages/photo-2.jpg" width="800" height="384" alt="Завораживающий ландшафт"> */
-/*
+
 .advantages-picter-1 {
   color: #ffffff;
-  background: #d3b3d3;
-  background-image: url("../image/advantages/photo-1.jpg");    - "Небольшие дома"
-  background-size: 100% auto;
+  background: #83b3d3;
+  /*background: #d3b3d3; */
+  background-image: url("../image/advantages/photo-1.jpg");   /* - "Небольшие дома" */
+  width: 800;
+  height: 384px;
+  margin-left: auto;
   background-repeat: no-repeat;
 }
 
 .advantages-picter-2 {
   color: #333333;
   background: #83b3d3;
-  background-image: url("../image/advantages/photo-2.jpg");     - "Завораживающий ландшафт" 
-  background-size: 100% auto;
+  background-image: url("../image/advantages/photo-2.jpg");   /* - "Завораживающий ландшафт" */
+  width: 800px;
+  height: 384px;
   background-repeat: no-repeat;
-} */
+}
 
 .icon-housing {
   color: #333333;
   background-color: rgba(131, 179, 211, 0.0);
   background-image: url("../image/advantages/housing.svg");
-  width: 75;
+  width: 75px;
   height: 72px;
+  margin: 0 auto;
   background-repeat: no-repeat;
-  /* background-align: center; - Нет такого свойства */
-  /* <img class="advantages-icon" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё"> - "Контентная" иконка */
+  /*horizontal-align, background-align: center; - Таких свойств нет. */
+  /* <img class="advantages-icon" src="image/advantages/housing.svg" width="75" height="72" alt="Жильё"> - "Контентная" иконка. */
 }
 
 .icon-food {
   color: #333333;
   background-color: inherit;
   background-image: url("../image/advantages/food.svg");
-  width: 74;
+  width: 74px;
   height: 70px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   /* <img class="advantages-icon" src="image/advantages/food.svg" width="74" height="70" alt="Жильё"> - "Контентная иконка" */
 }
@@ -192,8 +198,9 @@ body {                     /* Первая страница index.html */
   color: #333333;
   background-color: rgba(131, 179, 211, 0.0);
   background-image: url("../image/advantages/souvenir.svg");
-  width: 64;
+  width: 64px;
   height: 76px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   /* <img class="advantages-icon" src="image/advantages/souvenir.svg" width="64" height="76" alt="Жильё"> - "Контентная" иконка */
 }
